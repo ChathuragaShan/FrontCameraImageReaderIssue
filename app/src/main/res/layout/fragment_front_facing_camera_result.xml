@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".framgment.FrontFacingCameraResultFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/selfiePreviewImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.chathuranga.shan.imagereaderissue.utilities.SelfieCutoutView
+        android:id="@+id/cameraCutoutView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        app:backgroundColor="@color/secondary_gray"
+        app:backgroundDrawableColor="@color/human_figure_neck_color"
+        app:backgroundDrawable="@drawable/ic_profile"
+        app:circleRadius="@dimen/circle_cut_out_radius"
+        app:backgroundDrawableMarginTop ="16dp"
+        app:cutoutMargin="8dp"
+        app:backgroundDrawableHeight = "428.35dp"
+        tools:layout_editor_absoluteX="-170dp"
+        tools:layout_editor_absoluteY="16dp" />
 
-</FrameLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/statusImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/center_guideline"
+        app:srcCompat="@drawable/ic_valid_image_button_fab_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

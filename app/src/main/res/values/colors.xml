@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="handler_color">#F9B300</color>
+    <color name="gray">#C0C7D0</color>
+    <color name="secondary_gray">#4A5666</color>
+    <color name="human_figure_neck_color">#454545</color>
 </resources>
