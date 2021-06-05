@@ -22,7 +22,8 @@
         android:layout_centerInParent="true"
         app:backgroundColor="@color/secondary_gray"
         app:circleRadius="@dimen/circle_cut_out_radius"
-        app:cutoutMargin="8dp" />
+        app:cutoutMargin="8dp"
+        app:dotedCircleColor="@color/handler_color"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/cameraFabButton"

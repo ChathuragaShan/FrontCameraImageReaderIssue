@@ -27,7 +27,8 @@
         app:cutoutMargin="8dp"
         app:backgroundDrawableHeight = "428.35dp"
         tools:layout_editor_absoluteX="-170dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        app:dotedCircleColor="@color/handler_color"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/center_guideline"

@@ -22,5 +22,6 @@
         <attr name="backgroundDrawableColor" format="reference"/>
         <attr name="backgroundDrawableHeight" format="dimension"/>
         <attr name="backgroundDrawableMarginTop" format="dimension"/>
+        <attr name="dotedCircleColor" format="color"/>
     </declare-styleable>
 </resources>
